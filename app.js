@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
 })
 
 
+
 // Otros endpoints para alta, baja, modificación, etc.
 
 const puerto = 3300; // Puerto en el que se ejecutará el servidor
