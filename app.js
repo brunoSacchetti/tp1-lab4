@@ -9,11 +9,11 @@ app.get("/", (req, res) => {
 })
 
 /* ESTO ES PARA CARGAR VISTAS */
-app.get("/administrarEmpresa", (req, res) => {
-  res.sendFile(__dirname + "/adminEmpresa.html")
+app.get("/empresas", (req, res) => {
+  res.sendFile(__dirname + "/administrarEmpresa.html")
 })
 
-app.get("/administrarNoticia", (req, res) => {
+app.get("/noticias", (req, res) => {
   res.sendFile(__dirname + "/administrarNoticia.html")
 })
 
