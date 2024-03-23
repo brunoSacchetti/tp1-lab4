@@ -8,10 +8,13 @@ app.get("/", (req, res) => {
   res.json("funciona")
 })
 
-app.get("/adminEmpresa", (req, res) => {
-  res.sendFile(__dirname + "/adminEmpresa.html")
+app.get("/administrarEmpresa", (req, res) => {
+  res.sendFile(__dirname + "/administrarEmpresa.html")
 })
 
+app.get("/administrarNoticia", (req, res) => {
+  res.sendFile(__dirname + "/administrarNoticia.html")
+})
 
 // Otros endpoints para alta, baja, modificación, etc.
 
