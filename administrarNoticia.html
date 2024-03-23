@@ -4,16 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador de Noticias</title>
-    <!-- Enlace al CDN de Tinymce -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-        // Inicializar Tinymce
-        tinymce.init({
-            selector: '#contenido', // Selector del textarea
-            plugins: 'lists link',
-            toolbar: 'undo redo | formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | outdent indent | link | bullist numlist'
-        });
-    </script>
+
 </head>
 <body>
     <h1>Administrador de Noticias</h1>
@@ -26,7 +17,7 @@
 
         <!-- Campo de contenido HTML -->
         <label for="contenido">Contenido:</label><br>
-        <textarea id="contenido" name="contenido" required></textarea><br><br>
+        <textarea id="contenido" name="contenido" required cols="100" rows="20"></textarea><br><br>
 
         <!-- Campo de imagen -->
         <label for="imagen">Imagen:</label><br>
